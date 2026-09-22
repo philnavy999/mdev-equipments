@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0a1328">
+  <meta name="description" content="Equipment enquiries, product guidance and WhatsApp ordering with MDEV Equipments.">
+  <title>MDEV Equipments | Tools, Machines & Order Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f7c928'/%3E%3Cpath d='M13 44V20h9l10 11 10-11h9v24h-9V32L32 43 22 32v12Z' fill='%230a1328'/%3E%3C/svg%3E">
+  <style>
+    :root{--night:#0a1328;--night-2:#121f3a;--ink:#101727;--paper:#f7f9fc;--white:#fff;--muted:#5c6678;--line:#dce2ea;--yellow:#f7c928;--yellow-2:#ffdb4d;--green:#20c66a;--green-dark:#075b32;--shadow:0 18px 46px rgba(4,12,31,.16)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% 10%,#182746 0,var(--night) 46%);color:var(--ink);font-family:"Manrope",sans-serif;font-size:16px;line-height:1.55}body::selection{background:var(--yellow);color:var(--night)}a{color:inherit}img{display:block;max-width:100%}.page{width:min(100%,460px);margin-inline:auto;background:var(--paper);min-height:100vh;box-shadow:0 0 80px rgba(0,0,0,.38)}
+    .poster{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--night)}.poster>img{width:100%;height:100%;object-fit:cover;object-position:center}.poster-wa{position:absolute;z-index:2;left:50%;bottom:18px;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:9px;width:calc(100% - 46px);min-height:54px;padding:12px 17px;border:2px solid rgba(255,255,255,.9);border-radius:15px;background:#18c969;color:#052c19;text-decoration:none;font-weight:900;box-shadow:0 14px 34px rgba(0,0,0,.38)}.poster-wa svg{width:25px;height:25px;color:#fff;flex:0 0 auto}.poster-wa:hover{background:#27df7a}.poster-wa:focus-visible{outline:3px solid var(--yellow);outline-offset:4px}
+    .content{padding:22px}.status{display:flex;justify-content:center;align-items:center;gap:7px;color:var(--green-dark);font-size:.78rem;font-weight:800;margin:0 0 17px}.status::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(32,198,106,.12)}.wa{display:flex;align-items:center;justify-content:center;gap:11px;min-height:64px;border-radius:14px;background:var(--white);color:var(--ink);text-decoration:none;font-weight:800;box-shadow:var(--shadow);transition:transform .2s cubic-bezier(.2,.8,.2,1),box-shadow .2s cubic-bezier(.2,.8,.2,1)}.wa:hover{transform:translateY(-2px);box-shadow:0 22px 50px rgba(4,12,31,.2)}.wa:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--yellow);outline-offset:4px}.wa-icon{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--green);color:#fff}.wa-icon svg{width:23px;height:23px}.availability{margin:14px 0 0;text-align:center;color:var(--night);font-size:.8rem;font-weight:800}.intro{margin:22px 3px 0;text-align:center;color:var(--muted);font-size:.94rem}.intro strong{color:var(--ink)}
+    section{padding:30px 22px}.section-title{text-align:center;margin:0 0 6px;font-family:"Barlow Condensed",sans-serif;font-size:2rem;font-weight:900;line-height:1}.section-copy{text-align:center;margin:0 0 21px;color:var(--muted);font-size:.86rem}.catalog{background:#eef2f6}.category-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.category{display:flex;min-height:105px;flex-direction:column;align-items:flex-start;justify-content:space-between;padding:15px;background:var(--white);border:1px solid var(--line);border-radius:14px;text-decoration:none;transition:border-color .2s ease,transform .2s ease}.category:hover{transform:translateY(-2px);border-color:#9ca8b9}.category svg{width:27px;height:27px;color:#d59f00}.category strong{font-size:.84rem;line-height:1.25}.category small{color:var(--muted);font-size:.7rem}
+    .timeline{background:var(--night);color:#fff}.timeline .section-copy{color:#b8c3d7}.steps{position:relative;margin-top:24px}.steps::before{content:"";position:absolute;left:23px;top:20px;bottom:20px;width:2px;background:#34415a}.step{position:relative;display:grid;grid-template-columns:48px 1fr;gap:15px;padding:0 0 24px}.step:last-child{padding-bottom:0}.step-num{position:relative;z-index:1;width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:var(--yellow);color:var(--night);font-family:"Barlow Condensed",sans-serif;font-size:1.5rem;font-weight:900}.step h3{margin:2px 0 4px;font-size:.98rem}.step p{margin:0;color:#b8c3d7;font-size:.82rem}
+    .why-list{list-style:none;padding:0;margin:22px 0 0}.why-list li{display:grid;grid-template-columns:28px 1fr;gap:11px;align-items:start;padding:14px 0;border-top:1px solid var(--line);font-size:.88rem}.check{width:26px;height:26px;border-radius:9px;display:grid;place-items:center;background:#d9f7e7;color:#087a43;font-weight:900}.why-list strong{display:block;margin-bottom:2px}.why-list span:last-child{color:var(--muted)}
+    .closing{padding-top:10px}.closing-box{background:var(--night-2);color:#fff;border-radius:16px;padding:27px 20px;text-align:center}.closing-box h2{margin:0 0 8px;font-family:"Barlow Condensed",sans-serif;font-size:2.1rem;line-height:1}.closing-box p{margin:0 0 19px;color:#c5cede;font-size:.9rem}.closing-box .wa{background:var(--green);color:#052c19;box-shadow:none}.closing-box .wa-icon{background:rgba(255,255,255,.18)}
+    .legal{padding:22px;color:#667084;font-size:.72rem;text-align:center}.legal a{text-underline-offset:4px}.legal details{text-align:left;border-top:1px solid var(--line);padding:12px 0}.legal details:last-of-type{border-bottom:1px solid var(--line)}.legal summary{cursor:pointer;color:var(--ink);font-weight:800}.legal p{margin:8px 0 0}.copyright{margin-top:16px}
+    @media(max-width:480px){body{background:var(--paper)}.page{box-shadow:none}.poster-wa{bottom:14px;width:calc(100% - 32px);min-height:51px;font-size:.88rem}.content{padding:19px 16px 22px}section{padding:28px 16px}.wa{min-height:60px}.category-grid{gap:9px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.wa,.category{transition:none}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="poster">
+      <img src="assets/md-equipments-poster.png" alt="MD Equipments premium quality, trusted service and fast reliable response poster" width="1254" height="1254">
+      <a class="poster-wa" href="https://wa.link/mahadev2" aria-label="Contact MD Equipments on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.3 23.6l6-1.6A11.8 11.8 0 0 0 12 23.4h.1A11.8 11.8 0 0 0 20.5 3.5Zm-8.4 17.9h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.5.9.9-3.4-.2-.4A9.8 9.8 0 1 1 12 21.4Z"/></svg>WhatsApp for details &amp; prices</a>
+    </header>
+
+    <div class="content">
+      <p class="status">WhatsApp enquiries open</p>
+      <a class="wa" href="https://wa.link/mahadev2" aria-label="Enquire with MDEV Equipments on WhatsApp"><span class="wa-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.3 23.6l6-1.6A11.8 11.8 0 0 0 12 23.4h.1A11.8 11.8 0 0 0 20.5 3.5Zm-8.4 17.9h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.5.9.9-3.4-.2-.4A9.8 9.8 0 1 1 12 21.4Z"/></svg></span>Enquire on WhatsApp</a>
+      <p class="availability">⏰ Available 7 days a week • Reply within minutes</p>
+      <p class="intro"><strong>MDEV EQUIPMENTS</strong> helps you compare practical tools, workshop machines and essential accessories. Share your requirement and receive product guidance directly on <strong>WhatsApp.</strong></p>
+    </div>
+
+    <section class="catalog">
+      <h2 class="section-title">Choose your enquiry</h2>
+      <p class="section-copy">Select a category and send the details on WhatsApp.</p>
+      <div class="category-grid">
+        <a class="category" href="https://wa.link/mahadev2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m14 3 7 7-4 4-2-2-8 8H3v-4l8-8-2-2 5-3Z"/></svg><strong>Power tools</strong><small>Drills, grinders & more</small></a>
+        <a class="category" href="https://wa.link/mahadev2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 18h16M6 18V8h12v10M9 8V5h6v3M9 13h6"/></svg><strong>Workshop machines</strong><small>Equipment for daily work</small></a>
+        <a class="category" href="https://wa.link/mahadev2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19h14M7 19v-5a5 5 0 0 1 10 0v5M9 12V8a3 3 0 0 1 6 0v4"/></svg><strong>Safety equipment</strong><small>Worksite protection essentials</small></a>
+        <a class="category" href="https://wa.link/mahadev2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16v12H4zM8 7V4h8v3M4 12h16M10 12v2h4v-2"/></svg><strong>Parts & accessories</strong><small>Useful add-ons and replacements</small></a>
+        <a class="category" href="https://wa.link/mahadev2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m3 7 9-4 9 4-9 4-9-4Zm2 3v7l7 4 7-4v-7"/></svg><strong>Bulk requirements</strong><small>Share quantities and location</small></a>
+        <a class="category" href="https://wa.link/mahadev2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a7 7 0 0 0-4 12.7V19h8v-3.3A7 7 0 0 0 12 3ZM9 22h6"/></svg><strong>Product guidance</strong><small>Discuss the right equipment</small></a>
+      </div>
+    </section>
+
+    <section class="timeline">
+      <h2 class="section-title">From requirement to order</h2>
+      <p class="section-copy">A clearer path before anything is confirmed.</p>
+      <div class="steps">
+        <article class="step"><span class="step-num">1</span><div><h3>Share what you need</h3><p>Send the equipment name, intended use, quantity and delivery location.</p></div></article>
+        <article class="step"><span class="step-num">2</span><div><h3>Compare suitable options</h3><p>Review available choices and important product details for your requirement.</p></div></article>
+        <article class="step"><span class="step-num">3</span><div><h3>Confirm the order</h3><p>Pricing, stock, delivery and offer eligibility are confirmed before payment.</p></div></article>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Why buyers contact MDEV</h2>
+      <p class="section-copy">Simple communication and equipment-focused support.</p>
+      <ul class="why-list">
+        <li><span class="check">✓</span><span><strong>Requirement-first guidance</strong>Suggestions begin with the job, quantity and working conditions.</span></li>
+        <li><span class="check">✓</span><span><strong>Clear order confirmation</strong>Availability and final terms are checked before an order is accepted.</span></li>
+        <li><span class="check">✓</span><span><strong>One WhatsApp conversation</strong>Keep product questions, choices and order details in one place.</span></li>
+        <li><span class="check">✓</span><span><strong>Practical equipment range</strong>Enquire about tools, machines, safety items and useful accessories.</span></li>
+      </ul>
+    </section>
+
+    <section class="closing">
+      <div class="closing-box"><h2>Tell us what the work demands.</h2><p>Send the equipment name or a reference photo and start your enquiry.</p><a class="wa" href="https://wa.link/mahadev2"><span class="wa-icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.3 23.6l6-1.6A11.8 11.8 0 0 0 12 23.4h.1A11.8 11.8 0 0 0 20.5 3.5Zm-8.4 17.9h-.1a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.5.9.9-3.4-.2-.4A9.8 9.8 0 1 1 12 21.4Z"/></svg></span>Start WhatsApp enquiry</a></div>
+    </section>
+
+    <footer class="legal">
+      <details><summary>Offer and order terms</summary><p>The introductory 10% saving applies only to eligible first confirmed orders for a limited period. Stock, compatibility, delivery, payment and final pricing are confirmed before an order is accepted.</p></details>
+      <details><summary>Privacy</summary><p>Contact details and requirement information shared for an enquiry are used to respond, recommend products and support the requested order. Do not send passwords, payment credentials or sensitive identity documents over WhatsApp.</p></details>
+      <p class="copyright">© 2026 MDEV Equipments · Enquiries through WhatsApp</p>
+    </footer>
+  </main>
+</body>
+</html>

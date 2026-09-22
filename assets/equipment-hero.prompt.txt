@@ -1,0 +1,11 @@
+Use case: product-mockup
+Asset type: square hero image for a mobile equipment supplier landing page
+Primary request: create an original premium industrial equipment visual for Mahadev Equipments, showing a clean, well-organized selection of professional power tools and compact workshop equipment on a sturdy workbench
+Scene/backdrop: modern dark workshop with subtle shelving and metal surfaces
+Subject: cordless drill, angle grinder, tool case, safety helmet, measuring tools, and compact workshop machine components; realistic proportions, no people
+Style/medium: polished commercial product photography, realistic, high-end catalog quality
+Composition/framing: square composition, main equipment grouped in the lower two-thirds, clear darker negative space toward the upper area for website overlay copy
+Lighting/mood: directional studio lighting, confident and reliable
+Color palette: deep navy, graphite, safety yellow accents, restrained metallic silver
+Materials/textures: brushed metal, rubber tool grips, powder-coated equipment surfaces
+Constraints: no logos, no brand marks, no text, no letters, no watermarks, no UI, no poster frame, no unsafe tool use
