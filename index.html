@@ -2,6 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18468127548"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18468127548');
+    function gtag_report_conversion(url) {
+      var navigated = false;
+      function callback() {
+        if (!navigated && typeof url !== 'undefined') {
+          navigated = true;
+          window.location.assign(url);
+        }
+      }
+      setTimeout(callback, 1500);
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18468127548/CkYfCJzdwIEdELyGpeZE',
+        'value': 1.0,
+        'currency': 'INR',
+        'event_callback': callback,
+        'event_timeout': 1500
+      });
+      return false;
+    }
+    document.addEventListener('click', function(event) {
+      var link = event.target.closest && event.target.closest('a[href="https://wa.link/mahadev2"]');
+      if (!link || event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      gtag_report_conversion(link.href);
+    });
+  </script>
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0a1328">
   <meta name="description" content="Equipment enquiries, product guidance and WhatsApp ordering with MDEV Equipments.">
